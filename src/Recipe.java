@@ -64,23 +64,36 @@ public class Recipe {
     }
 
     public void scaleToServings(int newServings) {
-        // TODO:
-        // - If newServings <= 0 throw IllegalArgumentException
-        // - Compute factor = (double) newServings / servings
-        // - Multiply each ingredient amount by factor
-        // - Update servings
-        throw new UnsupportedOperationException("TODO");
+        /**
+         * Scales all ingredient amounts proportionally to match {@code newServings}.
+         *
+         * @param newServings the target number of servings; must be positive
+         * @throws IllegalArgumentException if {@code newServings} is not positive
+         */
+        if (newServings <= 0) {
+            throw new IllegalArgumentException("newServings must be positive");
+        }
+
+        double factor = (double) newServings / this.servings;
+
+        for (int i = 0; i < ingredientAmounts.size(); i++) {
+            ingredientAmounts.set(i, ingredientAmounts.get(i) * factor);
+        }
+
+        this.servings = newServings;
     }
 
     public String toString() {
-        // TODO:
-        // Return:
-        // <name> (serves <servings>)
-        // - <amount> <ingredient>
-        // ...
-        //
-        // Use formatAmount(double) helper for printing amounts.
-        throw new UnsupportedOperationException("TODO");
+        StringBuilder sb = new StringBuilder();
+        sb.append(name).append(" (serves ").append(servings).append(")\n");
+
+        for (int i = 0; i < ingredientNames.size(); i++) {
+            String iname = ingredientNames.get(i);
+            double amt = ingredientAmounts.get(i);
+            sb.append("- ").append(formatAmount(amt)).append(" ").append(iname).append("\n");
+        }
+
+        return sb.toString();
     }
 
     private String formatAmount(double x) {
@@ -94,7 +107,19 @@ public class Recipe {
         // 0.625 -> "0.63"
         // 1.333 -> "1.33"
         //
-        // TODO: implement.
-        throw new UnsupportedOperationException("TODO");
+        // Treat values extremely close to an integer as integers
+        double rounded = Math.rint(x);
+        if (Math.abs(x - rounded) < 1e-9) {
+            return String.valueOf((long) rounded);
+        }
+
+        // Format with two decimals, then trim trailing zeros
+        String s = String.format("%.2f", x);
+        // remove trailing zeros and possible trailing decimal point
+        if (s.indexOf('.') >= 0) {
+            s = s.replaceAll("0+$", "");
+            s = s.replaceAll("\\.$", "");
+        }
+        return s;
     }
 }
