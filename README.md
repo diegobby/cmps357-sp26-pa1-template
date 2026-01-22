@@ -21,6 +21,46 @@ Suggested workflow:
 
 **Note**: Students will not be able to Push changes (save to the server) because they are not contributors to this repository. Normally, sample code would first be Forked into a student’s own repository and then cloned locally. A fork is a server-side copy of a repository created under your own GitHub account, allowing you to make changes, Commit them, and Push updates without affecting the original project. We will use that workflow later in the course, though students are welcome to Fork this repo if they with to experiment.
 
+## Day 2+ From Single Class to Application
+
+Once the `Recipe` class is complete and behaving correctly, we will begin moving beyond a single-class exercise and toward a small but complete application.
+
+At this stage, the focus shifts from:
+- implementing isolated methods  
+to:
+- designing interactions between classes
+- managing collections of objects
+- separating responsibilities across files
+
+You should expect the project to grow incrementally rather than all at once.
+
+### What changes conceptually
+- `Recipe` becomes a *domain object*, not the whole program.
+- New classes will manage collections of recipes, searching, sorting, and aggregation.
+- Output formatting and user interaction will move out of `Recipe`.
+
+### What stays the same
+- `SPEC.md` remains the source of truth for required behavior.
+- Formatting rules for ingredients do not change.
+- Small, testable steps remain the goal.
+
+### Upcoming focus areas
+Over the next several days, we will introduce:
+- managing multiple recipes at once
+- searching and sorting recipes
+- combining ingredients across recipes into a shopping list
+- reading and writing data to files using JSON
+- thinking in terms of architecture instead of individual methods
+
+Each of these additions will be guided by the documents in the `docs/` directory:
+- `ARCHITECTURE.md` for overall structure
+- `DATA_MODEL.md` for how data is represented
+- `STAGES.md` for incremental milestones
+
+By the end of this sequence, you should be comfortable reading a spec, using an LLM to assist with implementation, and reasoning about how small classes fit into a larger design.
+
+
+
 
 ## Repository Structure 
 ```
