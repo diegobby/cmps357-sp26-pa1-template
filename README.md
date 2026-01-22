@@ -14,7 +14,7 @@ Clone the repository (repo), open it in IntelliJ (Get from VCS), run `Main`.
 Our job today is to implement the TODOs in `Recipe.java` using an LLM so that the program output matches the spec in `SPEC.md`.
 
 Suggested workflow:
-1. Read [SPEC.md](doc/SPEC.md)
+1. Read [SPEC.md](docs/SPEC.md)
 2. Run `Main` (it should compile, but output will be wrong until you implement TODOs)
 3. Implement one method at a time
 4. Make small commits with meaningful messages
@@ -42,7 +42,7 @@ You should expect the project to grow incrementally rather than all at once.
 - Output formatting and user interaction will move out of `Recipe`.
 
 ### What stays the same
--  [SPEC.md](doc/SPEC.md) remains the source of truth for required behavior.
+-  [SPEC.md](docs/SPEC.md) remains the source of truth for required behavior.
 - Formatting rules for ingredients do not change.
 - Small, testable steps remain the goal.
 
@@ -55,9 +55,9 @@ Over the next several days, we will introduce:
 - thinking in terms of architecture instead of individual methods
 
 Each of these additions will be guided by the documents in the `docs/` directory:
--  [ARCHITECTURE.md](doc/ARCHITECTURE.md) for overall structure
--  [DATA_MODEL.md](doc/DATA_MODEL.md) for how data is represented
--  [STAGES.md](doc/STAGES.md) for incremental milestones
+-  [ARCHITECTURE.md](docs/ARCHITECTURE.md) for overall structure
+-  [DATA_MODEL.md](docs/DATA_MODEL.md) for how data is represented
+-  [STAGES.md](docs/STAGES.md) for incremental milestones
 
 By the end of this sequence, you should be comfortable reading a spec, using an LLM to assist with implementation, and reasoning about how small classes fit into a larger design.
 
