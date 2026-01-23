@@ -48,7 +48,7 @@ public class RecipeBook {
         return recipes.removeIf(r -> {
             try {
                 return getRecipeName(r).equals(recipeName);
-            } catch (Exception e) {
+            } catch (ReflectiveOperationException e) {
                 return false;
             }
         });
@@ -97,7 +97,7 @@ public class RecipeBook {
                 if (recipeName.toLowerCase().contains(lowerQuery)) {
                     results.add(r);
                 }
-            } catch (Exception e) {
+            } catch (ReflectiveOperationException e) {
                 // Skip recipes we can't access
             }
         }
@@ -109,7 +109,7 @@ public class RecipeBook {
      * Helper method to get recipe name using reflection.
      * This is needed because Recipe's name field is private.
      */
-    private String getRecipeName(Recipe recipe) throws Exception {
+    private String getRecipeName(Recipe recipe) throws ReflectiveOperationException {
         java.lang.reflect.Field nameField = Recipe.class.getDeclaredField("name");
         nameField.setAccessible(true);
         return (String) nameField.get(recipe);

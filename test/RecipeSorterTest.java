@@ -60,7 +60,7 @@ public class RecipeSorterTest {
     }
 
     // Helper methods
-    private static String getRecipeName(Recipe recipe) throws Exception {
+    private static String getRecipeName(Recipe recipe) throws ReflectiveOperationException {
         java.lang.reflect.Field nameField = Recipe.class.getDeclaredField("name");
         nameField.setAccessible(true);
         return (String) nameField.get(recipe);

@@ -33,7 +33,7 @@ public class RecipeSorter {
                     String name1 = getRecipeName(r1);
                     String name2 = getRecipeName(r2);
                     return name1.compareToIgnoreCase(name2);
-                } catch (Exception e) {
+                } catch (ReflectiveOperationException e) {
                     return 0;
                 }
             }
@@ -46,7 +46,7 @@ public class RecipeSorter {
      * Helper method to get recipe name using reflection.
      * This is needed because Recipe's name field is private.
      */
-    private static String getRecipeName(Recipe recipe) throws Exception {
+    private static String getRecipeName(Recipe recipe) throws ReflectiveOperationException {
         java.lang.reflect.Field nameField = Recipe.class.getDeclaredField("name");
         nameField.setAccessible(true);
         return (String) nameField.get(recipe);
