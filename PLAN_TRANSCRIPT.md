@@ -1,3 +1,10 @@
+# Plan Transcript
+
+## Chat GPT Session
+[This session](https://chatgpt.com/share/6972a438-2e10-8011-9a61-eef40179e2c6)  was used to begin the `app-planning` work.
+
+## VS Code Session
+
 User: What implementation changes need to be completed before begining the larger application described in `docs/` ?
 
 GitHub Copilot: Searched codebase for "What implementation changes need to be completed before begining the larger application described in `docs/` ?", 11 results
