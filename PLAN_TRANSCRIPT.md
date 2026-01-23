@@ -27,7 +27,7 @@ Additional low-effort improvements before Stage 2:
 
 User: Update the TODO.md accordingly
 
-GitHub Copilot: Read [TODO](TODO.md)
+GitHub Copilot: Read [TODO.md](TODO.md)
 
 Using "Apply Patch"
 
@@ -50,13 +50,13 @@ There’s no test framework or test sources in this repo right now (no `test/` f
 
 User: Implement the testing suggested by TODO
 
-GitHub Copilot: Read [](file:///c%3A/Users/nicho/VS%20Code%20Projects/cmps357-sp26-first-example/src/Recipe.java)
+GitHub Copilot: Read [Recipe.java](src/Recipe.java)
 
-Read [](file:///c%3A/Users/nicho/VS%20Code%20Projects/cmps357-sp26-first-example/src/Main.java)
+Read [Main.java](src/Main.java)
 
-Read [](file:///c%3A/Users/nicho/VS%20Code%20Projects/cmps357-sp26-first-example/TODO.md)
+Read [TODO.md](TODO.md)
 
-Created [](file:///c%3A/Users/nicho/VS%20Code%20Projects/cmps357-sp26-first-example/test/RecipeTest.java)
+Created [RecipeTest.java](test/RecipeTest.java)
 
 Using "Apply Patch"
 
@@ -82,16 +82,16 @@ Made changes.
 
 User: Add the testing config to vsocde settings
 
-GitHub Copilot: Read [](file:///c%3A/Users/nicho/VS%20Code%20Projects/cmps357-sp26-first-example/.vscode)
+GitHub Copilot: Read [.vscode](.vscode)
 
-Read [](file:///c%3A/Users/nicho/VS%20Code%20Projects/cmps357-sp26-first-example/.vscode/settings.json)
+Read [settings.json](.vscode/settings.json)
 
 Using "Apply Patch"
 
 
 
 
-Created [](file:///c%3A/Users/nicho/VS%20Code%20Projects/cmps357-sp26-first-example/.vscode/tasks.json)
+Created [tasks.json](.vscode/tasks.json)
 
 Added VS Code test configuration:
 
@@ -119,7 +119,7 @@ Made changes.
 
 User: Is there a way to have the run-tests accessible through the play button or other gui than the `Run Tasks` of the command pallete?
 
-GitHub Copilot: Created [](file:///c%3A/Users/nicho/VS%20Code%20Projects/cmps357-sp26-first-example/.vscode/launch.json)
+GitHub Copilot: Created [launch.json](.vscode/launch.json)
 
 You now have GUI run targets:
 
