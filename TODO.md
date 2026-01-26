@@ -28,12 +28,15 @@
 - [x] Added comprehensive tests (test/IngredientTest.java, test/RecipeBookTest.java)
 - [x] All Stage 2 acceptance criteria met
 
-### Stage 3: Searching and Sorting (COMPLETE)
-- [x] Implemented case-insensitive search in RecipeBook
-- [x] Created RecipeSorter utility (src/RecipeSorter.java) for sorting recipes by name
+### Stage 3: Searching and Sorting (IN PROGRESS)
+- [x] Implemented case-insensitive name search in `RecipeBook`
+- [x] Created `RecipeSorter` utility (`src/RecipeSorter.java`) for sorting recipes by name
 - [x] Added tests (test/RecipeSorterTest.java)
-- [x] Created Stage2Demo.java to demonstrate functionality
-- [x] All Stage 3 acceptance criteria met
+- [x] Created `Stage2Demo.java` to demonstrate functionality
+- [ ] Implement ingredient-based search (find recipes by ingredient name; case-insensitive, partial match)
+- [ ] Implement multi-token search (queries like `garlic oil` — all tokens must match somewhere in recipe name or ingredient names)
+- [ ] Add stable secondary sort key for deterministic ordering when names compare equal ignoring case
+- [ ] Ensure search operations return a new list and never mutate stored recipes
 
 ### Documentation Updates
 - [x] Updated docs/STAGES.md to reflect progress on Stages 1, 2, and 3
