@@ -10,6 +10,8 @@ This assignment continues the Recipe application beyond the in-class work.
 
 You are expected to follow the project architecture and specifications provided in the `docs/` directory.
 
+Each Stage (3,4,5, and 6) must be accomponied by a Demo java file following the example in `src/Stage2Demo.java`.
+
 ---
 
 ## Stage 3: Searching and Sorting
