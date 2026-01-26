@@ -14,12 +14,22 @@ Each Stage (3, 4, 5, and 6) must be accomponied by a Demo java file following th
 
 ---
 
-## Stage 3 (In Class): Advanced Searching and Sorting
+## Stage 3: Advanced Searching and Sorting
 
-Stage 3 was completed in class and is included here as a reference for what your codebase should already support.
+Stage 3 was partially completed in class and is included here as a reference for what your codebase should already support.
+
+At the end of the in-class work, the project includes:
+- A working **case-insensitive recipe name search** using partial (substring) matching.
+- A clear separation between **stored recipe order** and **presentation-time sorting**.
+- A dedicated sorting utility used by the front end to display recipes alphabetically by name.
+
+These features establish the baseline for searching and sorting and ensure that collection operations are read-only and non-destructive.
+
+The items listed below are **required extensions** to this baseline.  
+They build directly on the in-class implementation and must be completed as part of this stage, even if the initial in-class version does not yet support them.
 
 ### Search capabilities (advanced)
-Your project should already support at least the following search behaviors:
+Your project must support the following search behaviors:
 
 - **Case-insensitive name search**
   - Partial matches (contains)
@@ -54,7 +64,7 @@ Your project should already support sorting at presentation time, including:
 
 ---
 
-## Required Stages to Complete (You)
+## Additional Stages Required to Complete
 
 You must complete **Stages 4–6** as defined in `STAGES.md`.
 
