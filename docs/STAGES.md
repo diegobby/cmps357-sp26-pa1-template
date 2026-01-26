@@ -59,7 +59,7 @@ Manage multiple recipes as a collection.
 - No implicit sorting is enforced at the data level. ✓
 
 **Progress**
-- Complete (RecipeBook class created with all required operations; Ingredient class created for future use)
+- Complete (RecipeBook class created with all required operations)
 
 ---
 
@@ -150,6 +150,7 @@ Generate a combined ingredient list from multiple recipes.
 - Ingredients with the same normalized name are summed.
 - Aggregation does not modify original recipes.
 - Output formatting follows the same amount rules as recipes.
+- Shopping cart ingredients are displayed in a consistent order.
 
 ### Progress
 - Not started
@@ -192,14 +193,14 @@ Persist and restore application state using files.
   - Validate data types and value ranges
 - **Error handling**
   - Detect and report malformed JSON
-  - Handle missing or invalid fields according to documented policy
+  - Handle missing or invalid fields according to documented policy (see Validation Policy in DATA_MODEL.md)
   - Provide meaningful error messages for debugging
 
 ### Acceptance Criteria
 - Recipe and ingredient order is preserved.
 - Stored numeric values remain unformatted.
 - Loaded data is validated before use.
-- Invalid data is handled according to documented policy.
+- Invalid data is handled according to documented policy (see Validation Policy in DATA_MODEL.md).
 
 ### Progress
 - Not started
@@ -324,6 +325,10 @@ Goodbye!
 - UI depends on service and model layers, not persistence internals.
 - All previously implemented features are accessible through the UI.
 - Sorting and formatting rules are consistently applied.
+ - Search commands return correct results consistent with Stage 3.
+ - Shopping cart aggregation returns correct results consistent with Stage 4.
+ - Load and save commands report success and errors per the Validation Policy.
+ - Invalid input does not crash the program; users receive helpful messages and can retry.
 
 ### Progress
 - Not started

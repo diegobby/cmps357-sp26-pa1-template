@@ -119,15 +119,34 @@ The shopping cart is a derived view, not a persisted entity.
 ```
 
 **Persistence Rules**
-- JSON stores raw numeric values without formatting.
-- Order of recipes and ingredients is preserved.
-- On load:
   - Validation rules for names and amounts are re-applied.
-  - Invalid entries may be skipped or rejected according to application policy.
+  - Invalid data handling follows the Validation Policy.
 
----
 
-## Design Notes
+## Validation Policy
+
+This policy defines how JSON input is validated during load and how invalid data is handled.
+
+### Required Fields and Constraints
+- Recipe
+  - `name`: non-null, non-blank after trimming
+  - `servings`: integer > 0
+  - `ingredients`: array (may be empty)
+- Ingredient
+  - `name`: non-null, non-blank after trimming
+  - `amount`: numeric > 0
+
+### Unknown or Extra Fields
+- Extra fields are ignored during load and do not cause failure.
+
+### Failure Handling
+- If any required field is missing or any constraint is violated in the input:
+  - The load operation fails and returns an error.
+  - No partial data is applied to the current in-memory state (all-or-nothing).
+
+### Error Reporting
+- Errors should include a clear reason (e.g., missing `name`, invalid `amount`) and, when feasible, the location within the input (e.g., recipe index).
+
 - Formatting is a presentation concern and must never affect stored values.
 - Ingredient identity within a recipe is positional, not semantic.
 - Aggregation and normalization logic are intentionally separated from core entities.
