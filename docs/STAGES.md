@@ -258,6 +258,68 @@ Provide a usable front-end for interacting with the system.
   - Provide helpful error messages
   - Allow users to retry or exit
 
+### Example CLI Output
+
+```
+=== Recipe Manager ===
+1. List all recipes
+2. Search recipes
+3. View recipe details
+4. Build shopping cart
+5. Load recipes from file
+6. Save recipes to file
+7. Exit
+
+Enter command: 1
+
+All Recipes (3):
+1. Pancakes (4 servings)
+2. Garlic Bread (2 servings)
+3. Tomato Soup (6 servings)
+
+Enter command: 2
+Enter search query: garlic
+
+Search Results (1):
+1. Garlic Bread (2 servings)
+
+Enter command: 3
+Enter recipe name: Garlic Bread
+
+=== Garlic Bread ===
+Servings: 2
+
+Ingredients:
+  - Bread: 1
+  - Garlic: 4
+  - Butter: 0.5
+  - Parsley: 0.25
+
+Enter command: 4
+Enter recipe names (comma-separated): Pancakes, Garlic Bread
+
+=== Shopping Cart ===
+Aggregated Ingredients:
+  - Bread: 1
+  - Butter: 1.5
+  - Eggs: 2
+  - Flour: 2
+  - Garlic: 4
+  - Milk: 1.5
+  - Parsley: 0.25
+
+Enter command: 5
+Enter file path: recipes.json
+Successfully loaded 3 recipes from recipes.json
+
+Enter command: 6
+Enter file path: my_recipes.json
+Successfully saved 3 recipes to my_recipes.json
+
+Enter command: 7
+Goodbye!
+```
+
 ### Acceptance Criteria
 - UI depends on service and model layers, not persistence internals.
 - All previously implemented features are accessible through the UI.
