@@ -49,8 +49,10 @@ The original files and workflow in this repository (Day 1) were created with the
 Once the `Recipe` class is complete and behaving correctly, we will begin moving beyond a single-class exercise and toward a small but complete application.
 
 At this stage, the focus shifts from:
-- implementing isolated methods  
-to:
+- implementing isolated methods and
+- writing driver code
+
+To:
 - designing interactions between classes
 - managing collections of objects
 - separating responsibilities across files
