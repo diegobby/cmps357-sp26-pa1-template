@@ -1,17 +1,13 @@
 # cmps357-sp26-pa1-template
 
 ## Project Requirements
- - Java IDE such as **IntelliJ Community Edition** [Windows](https://download.jetbrains.com/idea/ideaIC-2025.2.6.1.exe?_cl=MTsxOzE7c2tod09qdG1hNXpQbERWcGpJWGlZUUZ6Ym0zUW0yVTdpSGxRWHE3RU85RVJPaGtGd2tQSmNRTW13NGpSb0lXbTs=&_gl=1*1uc1dra*_gcl_au*MTI0NzgwMjk5NS4xNzY4NTgwNjIy*FPAU*MTI0NzgwMjk5NS4xNzY4NTgwNjIy*_ga*MTk5NDUxODMxNy4xNzY4NTgwNjIy*_ga_9J976DJZ68*czE3Njg1ODA2MTkkbzEkZzEkdDE3Njg1ODA2NjkkajEwJGwwJGgw) [Linux](https://download.jetbrains.com/idea/ideaIC-2025.2.6.1-aarch64.tar.gz?_gl=1*njar6m*_gcl_au*MTI0NzgwMjk5NS4xNzY4NTgwNjIy*FPAU*MTI0NzgwMjk5NS4xNzY4NTgwNjIy*_ga*MTk5NDUxODMxNy4xNzY4NTgwNjIy*_ga_9J976DJZ68*czE3Njg1ODA2MTkkbzEkZzEkdDE3Njg1ODA2NjkkajEwJGwwJGgw) [macOS (Intel)](https://download.jetbrains.com/idea/ideaIC-2025.2.6.1.dmg?_gl=1*ue2abp*_gcl_au*MTI0NzgwMjk5NS4xNzY4NTgwNjIy*FPAU*MTI0NzgwMjk5NS4xNzY4NTgwNjIy*_ga*MTk5NDUxODMxNy4xNzY4NTgwNjIy*_ga_9J976DJZ68*czE3Njg1ODA2MTkkbzEkZzEkdDE3Njg1ODA2NjkkajEwJGwwJGgw) [macOS (Apple Silicone)](https://download.jetbrains.com/idea/idea-2025.3.1.1-aarch64.dmg?_gl=1*ue2abp*_gcl_au*MTI0NzgwMjk5NS4xNzY4NTgwNjIy*FPAU*MTI0NzgwMjk5NS4xNzY4NTgwNjIy*_ga*MTk5NDUxODMxNy4xNzY4NTgwNjIy*_ga_9J976DJZ68*czE3Njg1ODA2MTkkbzEkZzEkdDE3Njg1ODA2NjkkajEwJGwwJGgw)
+ - Java IDE such as
+   - **IntelliJ Community Edition** [Windows](https://download.jetbrains.com/idea/ideaIC-2025.2.6.1.exe?_cl=MTsxOzE7c2tod09qdG1hNXpQbERWcGpJWGlZUUZ6Ym0zUW0yVTdpSGxRWHE3RU85RVJPaGtGd2tQSmNRTW13NGpSb0lXbTs=&_gl=1*1uc1dra*_gcl_au*MTI0NzgwMjk5NS4xNzY4NTgwNjIy*FPAU*MTI0NzgwMjk5NS4xNzY4NTgwNjIy*_ga*MTk5NDUxODMxNy4xNzY4NTgwNjIy*_ga_9J976DJZ68*czE3Njg1ODA2MTkkbzEkZzEkdDE3Njg1ODA2NjkkajEwJGwwJGgw) [Linux](https://download.jetbrains.com/idea/ideaIC-2025.2.6.1-aarch64.tar.gz?_gl=1*njar6m*_gcl_au*MTI0NzgwMjk5NS4xNzY4NTgwNjIy*FPAU*MTI0NzgwMjk5NS4xNzY4NTgwNjIy*_ga*MTk5NDUxODMxNy4xNzY4NTgwNjIy*_ga_9J976DJZ68*czE3Njg1ODA2MTkkbzEkZzEkdDE3Njg1ODA2NjkkajEwJGwwJGgw) [macOS (Intel)](https://download.jetbrains.com/idea/ideaIC-2025.2.6.1.dmg?_gl=1*ue2abp*_gcl_au*MTI0NzgwMjk5NS4xNzY4NTgwNjIy*FPAU*MTI0NzgwMjk5NS4xNzY4NTgwNjIy*_ga*MTk5NDUxODMxNy4xNzY4NTgwNjIy*_ga_9J976DJZ68*czE3Njg1ODA2MTkkbzEkZzEkdDE3Njg1ODA2NjkkajEwJGwwJGgw) [macOS (Apple Silicone)](https://download.jetbrains.com/idea/idea-2025.3.1.1-aarch64.dmg?_gl=1*ue2abp*_gcl_au*MTI0NzgwMjk5NS4xNzY4NTgwNjIy*FPAU*MTI0NzgwMjk5NS4xNzY4NTgwNjIy*_ga*MTk5NDUxODMxNy4xNzY4NTgwNjIy*_ga_9J976DJZ68*czE3Njg1ODA2MTkkbzEkZzEkdDE3Njg1ODA2NjkkajEwJGwwJGgw), or
+   - **VS Code** [Windows](https://code.visualstudio.com/sha/download?build=stable&os=win32-x64) [Linux](https://code.visualstudio.com/sha/download?build=stable&os=linux-x64) [macOS (Intel)](https://code.visualstudio.com/sha/download?build=stable&os=darwin) [macOS (Apple Silicone)](https://code.visualstudio.com/sha/download?build=stable&os=darwin-arm64)
  - Java SDK such as Azul Zulu
     - Available to download from with IntelliJ, or
     - Available [here](https://www.azul.com/downloads/?version=java-17-lts&package=jdk#zulu)
  - Git [Windows](https://github.com/git-for-windows/git/releases/download/v2.52.0.windows.1/Git-2.52.0-64-bit.exe) [Linux](https://git-scm.com/install/linux) [macOS](https://git-scm.com/install/mac)
-
-## Day 1 Spec-to-Implementation (Recipe Class)
-
-Clone the repository (repo), open it in IntelliJ (Get from VCS) or VS Code (Clone from Github), and then run `Main`.
-
-Our job today is to implement the TODOs in `Recipe.java` using an LLM so that the program output matches the spec in `SPEC.md`.
 
 ## Syllabus README Note
 
@@ -22,13 +18,29 @@ This `README.md` should be edited to match the syllabus README description: incl
 - **Run in VS Code**: Use the Java Extension Pack to run or debug the `Main` class directly (click the Run icon or use the Run | Debug options). Configure launch configurations in `.vscode/launch.json` if desired.
 - **Notes for students**: After cloning, follow these steps to configure VS Code and the JDK, then use the commands above to compile and run. Update this README with any project-specific setup steps (build tools, additional environment variables, or required extensions).
 
-Suggested workflow:
-1. Read [SPEC.md](docs/SPEC.md)
-2. Run `Main` (it should compile, but output will be wrong until you implement TODOs)
-3. Implement one method at a time
-4. Make small commits with meaningful messages
+Suggested workflow (starting at Stage 3):
 
-**Note**: Students will not be able to Push changes (save to the server) because they are not contributors to this repository. Normally, sample code would first be Forked into a student’s own repository and then cloned locally. A fork is a server-side copy of a repository created under your own GitHub account, allowing you to make changes, Commit them, and Push updates without affecting the original project. We will use that workflow later in the course, though students are welcome to Fork this repo if they with to experiment.
+1. Run **Stage 1** by executing `Main.java` to verify that Java, the JDK, and your IDE are configured correctly.
+2. Run the **Stage 2** demo file to confirm that the provided example behavior works as expected.
+3. Read **Stage 3** in [STAGES.md](docs/STAGES.md) carefully, noting which requirements are already implemented and which are still incomplete.
+4. Treat Stage 3 as a continuation stage:
+   - Identify gaps between the existing code and the Stage 3 acceptance criteria.
+   - Plan the remaining work before writing code.
+5. Use AI tools intentionally and transparently:
+   - Use AI to help plan implementations, outline algorithms, and reason about edge cases.
+   - Use AI to generate or refine method stubs, comments, and documentation.
+   - Review, adapt, and understand all AI-generated output before incorporating it.
+6. Implement the remaining Stage 3 features incrementally:
+   - Make small, focused changes.
+   - Commit frequently with messages that describe what changed and why.
+7. After completing Stage 3, proceed sequentially through **Stages 4–6**:
+   - Read each stage fully before starting.
+   - Use AI for design planning, refactoring guidance, and documentation updates.
+   - Avoid implementing features from later stages early unless explicitly instructed.
+8. Push your work regularly to your GitHub Classroom repository to preserve progress and demonstrate steady development.
+
+
+**Note**: Each student will work in their own repository created through GitHub Classroom. When you accept the assignment, GitHub automatically generates a private repository under your account where you have full write access. You should clone that repository locally, make changes, Commit them, and Push updates normally. Unlike a shared example repository, you are already a contributor to your own Classroom repository, so no Fork is required.
 
 The original files and workflow in this repository (Day 1) were created with the help of a [ChatGPT Session](https://chatgpt.com/share/696a5966-6000-8011-a070-388192adf348).
 
