@@ -15,7 +15,9 @@ public class RecipeSorter {
      * Returns a new list of recipes sorted by name (case-insensitive).
      *
      * <p>The original list is not modified. Sorting is case-insensitive
-     * using natural alphabetical order.
+     * using natural alphabetical order. When names compare equal ignoring case,
+     * a secondary sort key (case-sensitive name comparison) ensures deterministic
+     * and stable ordering.
      *
      * @param recipes the list of recipes to sort
      * @return a new sorted list
@@ -32,7 +34,15 @@ public class RecipeSorter {
                 try {
                     String name1 = getRecipeName(r1);
                     String name2 = getRecipeName(r2);
-                    return name1.compareToIgnoreCase(name2);
+                    
+                    // Primary sort: case-insensitive alphabetical
+                    int caseInsensitiveCompare = name1.compareToIgnoreCase(name2);
+                    if (caseInsensitiveCompare != 0) {
+                        return caseInsensitiveCompare;
+                    }
+                    
+                    // Secondary sort: case-sensitive (for deterministic ordering)
+                    return name1.compareTo(name2);
                 } catch (ReflectiveOperationException e) {
                     return 0;
                 }
